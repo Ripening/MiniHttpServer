@@ -1,0 +1,19 @@
+# 构建产物
+build/
+build-*/
+muduo/build/
+*.o
+*.a
+
+# 编辑器 / 系统
+.DS_Store
+.vscode/
+
+# 早期遗留在源码目录里的可执行文件
+HttpServer/test/http_parse_test
+
+# 个人笔记（不进公开仓库）
+NOTES.md
+笔记.md
+引用指针决策.md
+callback-lambda-summary.md

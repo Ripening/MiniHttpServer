@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #0f1117;
+    color: #e6e6e6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 720px;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    background: linear-gradient(135deg, #6ee7b7, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #8b949e;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: left;
+}
+
+.card h2 {
+    font-size: 18px;
+    color: #6ee7b7;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #8b949e;
+    line-height: 1.6;
+}
+
+.footer {
+    border-top: 1px solid #30363d;
+    padding-top: 20px;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #6e7681;
+    font-family: "SF Mono", Menlo, monospace;
+}
