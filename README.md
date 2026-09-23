@@ -102,6 +102,8 @@ curl -i -b jar http://127.0.0.1:8000/admin/panel    # 200
 
 环境：Docker Desktop ARM64 / ubuntu:22.04 / 3 vCPU / loopback / keep-alive（除非注明）。
 注意：回环 + 共享 VM，数字看量级与倍数关系；同机 wrk 与内核协议栈会和服务器抢 CPU。
+数据在中间件接入前测得；复现时注释掉 `http_server_test.cpp` 里注册 `AccessLogMiddleware`
+的一行——逐请求打日志会明显拉低 QPS。
 
 | 场景 | QPS | 说明 |
 |---|---|---|
